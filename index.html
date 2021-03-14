@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>UI/UX MOCK-UPS FOR CUSTOMER APPLICATION</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  	<link rel="stylesheet" type="text/css" href="css/index.css">
+  	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body class="p-0 m-0">
+	<div class="container py-5">
+		<div class="row">
+			<!-- signup form -->
+			<div class="col-md-6 border border-dark px-3">
+				<p class="p-0 m-0 mt-3 label">Create an account</p>
+				<form class="p-4" id="signup">
+					<input type="text" name="name" placeholder="Enter your name" class="form-control mb-3 name">
+					<input type="email" name="email" placeholder="Enter email" class="form-control mb-3 email">
+					<input type="password" name="password" placeholder="Enter password" class="form-control mb-3 password">
+					<p class="p-0 m-0 d-none text-success" id="signup-msg">Account created</p>
+					<input type="submit" value="Sign-Up" class="form-control w-25 float-right mb-3 btn-danger">
+				</form>
+			</div>
+
+			<!-- signin form -->
+			<div class="col-md-6 border border-dark px-3">
+				<p class="p-0 m-0 mt-3 label">Sign in to your account</p>
+				<form class="p-4" id="signin">
+					<input type="email" name="email" placeholder="Enter email" class="form-control mb-3 login-email">
+					<input type="password" name="password" placeholder="Enter password" class="form-control mb-3 login-password">
+					<p class="p-0 m-0 text-danger" id="signin-msg"></p>
+					<input type="submit" value="Sign-In" class="form-control w-25 float-right mb-3 btn-danger">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
