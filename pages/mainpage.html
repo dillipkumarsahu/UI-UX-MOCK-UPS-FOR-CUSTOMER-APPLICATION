@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>UI/UX MOCK-UPS FOR CUSTOMER APPLICATION</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="../css/mainpage.css">
+  	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body class="p-0 m-0">
+	<div class="container pt-1">
+		<!-- search bar input-->
+		<div class="row bg-dark px-0 px-md-5 py-3">
+			<div class="col-8 p-1">
+				<input type="search" class="form-control" id="search-input">
+			</div>
+			<div class="col-4 p-1">
+				<select class="form-control" id="searchBy">
+					<option>email</option>
+					<option>name</option>
+				</select>
+			</div>
+		</div>
+
+		<!-- heading -->
+		<div class="row shadow-sm">
+			<div class="col-md-1 mx-auto bg-dark text-light py-2 text-center">
+				<b>sl. no.</b>
+			</div>
+			<div class="col-md-2 mx-auto bg-dark text-light py-2 text-center">
+				<b>Name</b>
+			</div>
+			<div class="col-md-4 mx-auto bg-dark text-light py-2 text-center">
+				<b>Email</b>
+			</div>
+			<div class="col-md-4 mx-auto bg-dark text-light py-2 text-center">
+				<b>Password</b>
+			</div>
+			<div class="col-md-1 mx-auto bg-dark text-light py-2 text-center">
+				<b>Edit</b>
+			</div>
+		</div>
+
+		<!-- show message -->
+		<div class="row shadow-lg p-2 bg-dark">
+			<div class="bg-light col-12 text-center">
+				<h4 id="message" class="p-0 m-0 text-success"></h4>
+			</div>
+		</div>
+		<!-- show users data -->
+		<div class="row shadow-lg p-2 bg-dark" id="data-box">
+			<div class="bg-light col-12 text-center py-3">
+				<b>Loading...</b>
+			</div>
+		</div>
+	</div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-light">
+        	<h4 class="modal-title">Edit User's data</h4>
+         	<button type="button" class="close text-light p-0 pr-2" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body p-5">
+        	<!-- input for edit -->
+        	<input type="number" class="form-control" disabled="disabled" id="edit-id-input">
+           <input type="text" class="form-control mt-4" id="edit-name-input">
+           <input type="email" class="form-control mt-4" id="edit-email-input">
+           <input type="text" class="form-control mt-4" disabled="disabled" id="edit-password-input">
+
+           <button class="btn btn-danger mt-4" id="delete-data">Delete user's data</button>
+           <button class="btn btn-warning mt-4 float-right" id="save-changed-data">Save changes</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal" id="close-modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+</body>
+</html>
